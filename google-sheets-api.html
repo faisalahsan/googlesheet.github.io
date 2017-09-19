@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Sheet API Via Javascript</title>
+    <link rel="canonical" href="https://mdbootstrap.com/components/forms/" />
+    <link rel='stylesheet' id='compiled.css-css'  href='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled.min.css?ver=4.4.0' type='text/css' media='all' />
+    <style type="text/css">
+        body {
+
+        margin-top: 100px;
+        padding: 0;
+        text-align: center;
+    }
+    </style>
+</head>
+    <body class="fixed-sn mdb-skin-custom" >
+        <center>
+            <section>
+                <div class="card" style="width: 28rem;">
+                    <div class="card-body">
+
+                        <!--Header-->
+                        <div class="form-header default-color">
+                            <h3>Google Sheet Data Form</h3>
+                        </div>
+
+                        <!--Body-->
+
+                            <div class="md-form">
+                                <input type="text" id="first_name" name="last_name" class="form-control form_field">
+                                <label for="first_name">First Name</label>
+                            </div>
+
+                            <div class="md-form">
+                                <input type="text" id="last_name" name="last_name" class="form-control form_field">
+                                <label for="last_name">Last Name</label>
+                            </div>
+
+                            <div class="md-form">
+                                <input type="email" id="email" name="email" class="form-control form_field">
+                                <label for="email">Email</label>
+                            </div>
+
+                            <div class="text-center">
+                                <button id="submit" name="submit" type="buttton" class="btn btn-default form_button"> Submit</button> 
+                            </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <div class="options">
+                            <p>Powered By <a href="#">HugoBot</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </center>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type='text/javascript' src='https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/compiled.min.js?ver=4.4.0'></script>
+        <script type="text/javascript" src="googlesheetapi.js"></script>
+        <script type="text/javascript">
+            GoogleSheetAPI.init();
+        </script>
+    </body>
+</html>
